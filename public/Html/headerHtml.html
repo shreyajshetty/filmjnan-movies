@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content Page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Film Jnan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#celebrities">Actors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#movies">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#webseries">Web Series</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex" action="" method="GET" id="searchForm">
+              <input class="form-control mx-2" type="search" id="searchInput" name="q" placeholder="Search" aria-label="Search" style="width:650px">
+              <button class="btn btn-outline-primary" type="button" id="searchButton">Search</button>
+          </form>
+          <div id="searchResults"></div>
+            </div>
+        </div>
+      </nav>
+      <h1 style="color:rgb(54, 69, 79);display: none;"> Home</h1>
+      <div class="card-group" id="home"></div>
+      <div class="container "></div>
+      <h1 style="color:rgb(54, 69, 79)"> Actors </h1>
+      <div class="card-group" id="celebrities">
+      <div class="container ">
+        <h1>Puneeth Rajkumar</h1>
+        <p>Renowned Indian film actor known for his versatile roles. Born on 17/03/1975.</p>
+        <img src="../images/puneeth.jpg" alt="Puneeth">
+        <a href="https://en.wikipedia.org/wiki/Puneeth_Rajkumar" class="btn btn-outline-primary">About</a>
+      </div>
+      <div class="container">
+        <h1>Yash</h1>
+        <p>Popular actor in the Indian film industry, best known for his role in KGF. Born on 08/01/1986.</p>
+        <img src="../images/yash.jpg" alt="Yash">
+        <a href="https://en.wikipedia.org/wiki/Yash_(actor)" class="btn btn-outline-primary">About</a>
+     </div>
+     <div class="container">
+      <h1>Ram Charan</h1>
+      <p>Versatile actor and producer in Telugu cinema. Born on 27/03/1985.</p>
+      <img src="../images/ramcharan.jpg" alt="Ram Charan">
+      <a href="https://en.wikipedia.org/wiki/Ram_Charan" class="btn btn-outline-primary">About</a>
+   </div>
+   <div class="container">
+    <h1>Rishab Shetty</h1>
+    <p>Actor, director, and producer in Kannada cinema. Born on 07/07/1983.</p>
+    <img src="../images/rishabshetty.jpg" alt="Rishab Shetty">
+    <a href="https://en.wikipedia.org/wiki/Rishab_Shetty" class="btn btn-outline-primary">About</a>
+ </div>
+ <div class="container">
+  <h1>Anushka Shetty</h1>
+  <p>Prominent actress in Telugu and Tamil films. Born on 07/11/1981.</p>
+  <img src="../images/sweety.jpg" alt="Anushka Shetty">
+  <a href="https://en.wikipedia.org/wiki/Anushka_Shetty"class="btn btn-outline-primary">About</a>
+</div>
+<div class="container">
+  <h1>Sai Pallavi</h1>
+  <p>Talented actress known for her work in Malayalam, Telugu, and Tamil films. Born on 09/05/1992.</p>
+  <img src="../images/pallavi.jpg" alt="Sai Pallavi">
+  <a href="https://en.wikipedia.org/wiki/Sai_Pallavi" class="btn btn-outline-primary">About</a>
+</div>
+</div>
+<h1 style="color:rgb(54, 69, 79)"> Movies </h1>
+<div class="card-group" id="movies">
+  <div class="container-fluid movie-container" data-title="Leo">
+  <div class="card text-black mb-3">
+    <img class="card-img-top" src="../images/leo.jpg" alt="Leo" style="height:700px">
+    <div class="card-body">
+       <h5 class="card-title">Leo</h5>
+       <ul class="list">
+        <li class="data-plot">Things start to take an awry turn for a mild-mannered cafe owner, who gets caught in the crosshairs of a drug cartel.</li>
+        <li class="data-actors"><b>Actors:</b>Joseph Vijay, Sanjay Dutt, Kamal Haasan</li>
+        <li class="data-language"><b>Langauge:</b>Tamil</li>
+        <li class="data-released"><b>Released:</b>21 Nov 2023</li>
+        </ul>
+       <a href="https://youtu.be/Po3jStA673E?si=kEaZo4fD5ufruHu7" class="btn btn-primary">Watch Trailer</a>
+    </div>
+  </div>
+ </div>
+ <div class="container-fluid movie-container" data-title="Jawan">
+
+ <div class="card text-black mb-3">
+  <img class="card-img-top" src="../images/jawan.jpg" alt="Jawan" style="height:700px">
+  <div class="card-body">
+     <h5 class="card-title">Jawan</h5>
+     <ul class="list">
+      <li class="data-plot">A man is driven by a personal vendetta to rectify the wrongs in society, while keeping a promise made years ago. He comes up against a monstrous outlaw with no fear, who has caused extreme suffering to many</li>
+      <li class="data-actors"><b>Actors:</b>Shah Rukh Khan, Nayanthara, Vijay Sethupathi</li>
+      <li class="data-language"><b>Langauge:</b>Hindi</li>
+      <li class="data-released"><b>Released:</b>07 Sep 2023</li>
+      </ul>
+     
+     <a href="https://youtu.be/MWOlnZSnXJo?si=4uRQCzUq5Gl5-_d-" class="btn btn-primary">Watch Trailer</a>
+  </div>
+</div>
+</div>
+<div class="container-fluid movie-container" data-title="Hinanna">
+
+<div class="card text-black mb-3">
+  <img class="card-img-top" src="../images/hinanna.jpg" alt="Hi Nanna" style="height:700px">
+  <div class="card-body">
+     <h5 class="card-title">Hi Nanna</h5>
+     <ul class="list">
+      <li class="data-plot">A doting father and his 6-year-old daughter find their lives taking a dramatic turn when the woman he loves marries someone else.</li>
+      <li class="data-actors"><b>Actors:</b>Shruti Haasan, Mrunal Thakur, Nani</li>
+      <li class="data-language"><b>Langauge:</b>Telugu, Hindi, Tamil, Malayalam, Kannada</li>
+      <li class="data-released"><b>Released:</b>07 Dec 2023</li>
+      </ul>
+     
+     <a href="https://youtu.be/3Ld05Om2UWs?si=FUFXX2KX4kAgLp9Z" class="btn btn-primary">Watch Trailer</a>
+  </div>
+</div>
+</div>
+<div class="container-fluid movie-container" data-title="Hanuman">
+<div class="card text-black mb-3">
+  <img class="card-img-top" src="../images/hanuman.jpg" alt="HanuMan" style="height:700px">
+  <div class="card-body">
+     <h5 class="card-title">HanuMan</h5>
+     <ul class="list">
+      <li class="data-plot">A man who accidentally attains superpowers clashes with one who is desperate to get his own.</li>
+      <li class="data-actors"><b>Actors:</b>Teja Sajja, Amritha Aiyer, Varalaxmi Sarathkumar
+      </li>
+      <li class="data-language"><b>Langauge:</b>Hindi, Malayalam, Kannada, Tamil, English, Japanese, Chinese, Spanish, Korean, Telugu </li>
+      <li class="data-released"><b>Released:</b>12 Jan 2024</li>
+      </ul>
+     
+     <a href="https://youtu.be/Oqvly3MvlXA?si=UI_j2g4xFnbB-O09" class="btn btn-primary">Watch Trailer</a>
+  </div>
+</div>
+</div>
+<div class="container-fluid movie-container" data-title="Katera">
+<div class="card text-black mb-3">
+  <img class="card-img-top" src="../images/katera.jpg" alt="Katera" style="height:700px">
+  <div class="card-body">
+     <h5 class="card-title">Katera</h5>
+     <ul class="list">
+      <li class="data-plot">Set against the rustic backdrop of the 1970s, unfolds the tale of farmers confronting challenges that intricately shape the course of their lives</li>
+      <li class="data-actors"><b>Actors:</b>Darshan,Aradhana Ram
+      </li>
+      <li class="data-language"><b>Langauge:</b>Kannada</li>
+      <li class="data-released"><b>Released:</b>29 Dec 2023</li>
+      </ul>
+     <a href="https://youtu.be/L1KYlnMRtqc?si=QnVaDrmbGZi0fc4j" class="btn btn-primary">Watch Trailer</a>
+  </div>
+</div>
+</div>
+<div class="container-fluid movie-container" data-title="Salaar">
+<div class="card text-black mb-3">
+  <img class="card-img-top" src="../images/salaar.jpg" alt="Salaar" style="height:700px">
+  <div class="card-body">
+     <h5 class="card-title">Salaar</h5>
+     <ul class="list">
+      <li class="data-plot">A gang leader makes a promise to a dying friend by taking on other criminal gangs.</li>
+      <li class="data-actors"><b>Actors:</b>Prabhas, Prithviraj Sukumaran, Shruti Haasan </li>
+      <li class="data-language"><b>Language:</b>Hindi, Malayalam, Kannada, Tamil, Telugu</li>
+      <li class="data-released"><b>Released:</b> 22 Dec 2023</li>
+  </ul>
+    
+     <a href="https://youtu.be/4GPvYMKtrtI?si=SkUVU1BnjztGzUJZ" class="btn btn-primary">Watch Trailer</a>
+  </div>
+</div>
+</div>
+</div>
+
+   <h1 style="color:rgb(54, 69, 79)"> Web Series </h1>
+<div class="card-group" id="webseries">
+  <div class="container-fluid movie-container" data-title="Dhoota">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/dhoota.jpg" alt="Dhoota" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Dhoota</h5>
+        <ul class="list">
+          <li class="data-plot">Journalist Sagar's life is turned upside down when newspapers predict chilling incidents that unfold in his life..</li>
+          <li class="data-actors"><b>Actors:</b> Naga Chaitanya, Parvathy Thiruvothu, Sathyapriya Bhavani Shankar</li>
+          <li class="data-language"><b>Language:</b>Telugu</li>
+          <li class="data-released"><b>Released:</b>01 Dec, 2023</li>
+      </ul>
+       
+        <a href="https://youtu.be/-ITBFd_K5_M?si=1cDeM8QqjsFfrbhy" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+</div>
+
+  <div class="container-fluid movie-container" data-title="Familyman">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/familyman.jpg" alt="Family Man" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Family Man</h5>
+        <ul class="list">
+          <li class="data-plot">Srikant Tiwari is a middle-class man who also serves as a world-class spy; he tries to balance his familial responsibilities with those at the highly secretive special cell of the National Intelligence Agency.</li>
+          <li class="data-actors"><b>Actors:</b>Manoj Bajpayee, Priyamani, Sharib Hashmi, Ashlesha Thakur</li>
+          <li class="data-language"><b>Language:</b>Hindi</li>
+          <li class="data-released"><b>Released:</b>20 Sep, 2019</li>
+      </ul>
+        <a href="https://youtu.be/XatRGut65VI?si=dLahTN0WRdc-d_Cj" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+</div>
+
+  <div class="container-fluid movie-container" data-title="Asur">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/asur.jpg" alt="Asur" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Asur</h5>
+        <ul class="list">
+          <li class="data-plot">Forensic expert turned teacher Nikhil lives a quiet life with his wife and daughter until he joins forces with his old mentor to catch a serial killer who believes himself the incarnation of the asura Kali.</li>
+          <li class="data-actors"><b>Actors:</b>Arshad Warsi,Barun Sobti,Anupriya Goenka</li>
+          <li class="data-language"><b>Language:</b>Hindi</li>
+          <li class="data-released"><b>Released:</b>1 June 2023</li>
+      </ul>
+       
+        <a href="https://youtu.be/LDirQBvwx7g?si=YUnlof8KnRxMesSh" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+</div>
+
+  <div class="container-fluid movie-container" data-title="Scam 2003">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/scam.jpg" alt="Scam 2003" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Scam 2003</h5>
+        <ul class="list">
+          <li class="data-plot">Born in Khanapur in Karnataka, Telgi became the mastermind behind one of the most ingenious schemes in Indian history that spread across multiple states and shook the entire country.</li>
+          <li class="data-actors"><b>Actors:</b>Gagandev Riar, Sana Amin Sheikh, Iravati Harshe</li>
+          <li class="data-language"><b>Language:</b> :Hindi, Tamil, Marathi, Telugu, Bengali, Kannada, Malayalam</li>
+          <li class="data-released"><b>Released:</b>01 Sep 2023</li>
+      </ul>
+        
+        <a href="https://youtu.be/JrotIxxCXiA?si=GjWxKyFCZ05ZSt_s" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+</div>
+  <div class="container-fluid movie-container" data-title="Physics Wallah">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/physicswallah.jpg" alt="Physics Wallah" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Physics Wallah</h5>
+        <ul class="list">
+          <li class="data-plot">A young, bright, and visionary teacher's inspirational journey to create a new age, advanced, and highly affordable, parallel education system while fighting the monopolistic, corporate giants and overcoming several internal battles.</li>
+          <li class="data-actors"><b>Host:</b> Shriidhar Dubey, Radha Bhatt, Anurag Thakur</li>
+          <li class="data-language"><b>Language:</b> Hindi, English</li>
+          <li class="data-released"><b>Released:</b>15 Dec 2022</li>
+      </ul>
+        
+        <a href="https://youtu.be/oRpB-YF1QsU?si=4ij04vuS8F6H5zfz" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+</div>
+
+  <div class="container-fluid movie-container" data-title="Farzi">
+  <div class="card text-black bg-white mb-3">
+     <img class="card-img-top" src="../images/farzi.jpg" alt="Farzi" style="height:700px">
+     <div class="card-body">
+        <h5 class="card-title">Farzi</h5>
+        <ul class="list">
+          <li class="data-plot">Sunny, a brilliant small-time artist is propelled into the high-stakes world of counterfeiting when he creates the perfect fake currency note.</li>
+          <li class="data-actors"><b>Actors:</b>Shahid Kapoor, Vijay Sethupathi</li>
+          <li class="data-writers"><b>Writers:</b>Shahid Kapoor, Vijay Sethupathi</li>
+          <li class="data-language"><b>Language:</b>Hindi</li>
+          <li class="data-released"><b>Released:</b>10 Feb 2023</li>
+      </ul>
+        
+        <a href="https://youtu.be/rcQ_xZdzPBc?si=bd6T2QrdqAwbKpdN" class="btn btn-primary" target="_blank">Watch Trailer</a>
+     </div>
+  </div>
+
+</div>
+<script src="../script/headerScript.js " defer></script>
+
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
